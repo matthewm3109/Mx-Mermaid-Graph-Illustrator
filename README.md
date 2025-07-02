@@ -1,5 +1,5 @@
 ## Typical usage scenario
-This widget uses the Mermaid framework to create interactive graphs and visualizations. Mermaid is an open-source Javascript-based charting tool that builds graphs based on a Markdown-like description. This widget can be used wherever you need graphing, though it is best utilized for more complex charts like:
+This widget uses the Mermaid framework to create interactive graphs and visualizations. Mermaid is an open-source Javascript-based charting tool that builds graphs from a Markdown-based description. This widget can be used wherever you need graphing, though it is best utilized for more complex charts like:
 - Flowcharts
 - Gantt charts
 - Entity–relationship diagrams
