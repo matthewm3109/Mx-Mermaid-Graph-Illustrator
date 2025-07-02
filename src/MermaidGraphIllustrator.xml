@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.mermaidgraphillustrator.MermaidGraphIllustrator" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Mermaid Graph Illustrator</name>
+    <description>Generate a Mermaid Graph </description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="mermaidInfra" type="attribute" required="true">
+                <caption>Mermaid Markdown</caption>
+                <description>Enter markdown on how you want the graph to be structured</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="mermaidConfig" type="attribute" required="true">
+                <caption>UI Configuration</caption>
+                <description>Enter details on how you want the graph to look (styling)</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="On Click Actions">
+            <property key="selection" type="attribute" required="true">
+                <caption>Selection</caption>
+                <description>This attribute will be updated the specified HTML Attribute (below) after clicking</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="CSSSelector" type="string" required="true" defaultValue="g.node">
+                <caption>CSS Selector</caption> 
+                    <description>This string tells the browser what element(s) you're trying to select. It is essentially the input to 'document.querySelector()'</description>
+            </property>
+            <property key="HTMLAttribute" type="string" required="true" defaultValue="id">
+                <caption>HTML Attribute</caption> 
+                    <description>Attribute on the element you want to retrieve information from</description>
+            </property>
+            <property key="onClickAction" type="action" required="true">
+                <caption>On click action</caption> 
+                    <description>Action to trigger when an item is clicked</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

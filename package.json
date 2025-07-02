@@ -1,0 +1,48 @@
+{
+  "name": "mermaidgraphillustrator",
+  "widgetName": "MermaidGraphIllustrator",
+  "version": "1.0.0",
+  "description": "Generate a Mermaid Graph ",
+  "copyright": "© Mendix Technology BV 2022. All rights reserved.",
+  "author": "Mano",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "Apache-2.0",
+  "config": {
+  "projectPath": "./tests/testProject",
+  "mendixHost": "http://localhost:8080",
+  "developmentPort": 3000,
+  "transpileDependencies": ["mermaid"],
+  "rollupOptions": {
+    "output": {
+      "inlineDynamicImports": true
+    }
+  }
+},
+  "packagePath": "mendix",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^10.15.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "mermaid": "^11.7.0"
+  },
+  "resolutions": {
+    "react": "^18.2.0",
+    "react-native": "0.72.7"
+  },
+  "overrides": {
+    "react": "^18.2.0",
+    "react-native": "0.72.7"
+  }
+}
