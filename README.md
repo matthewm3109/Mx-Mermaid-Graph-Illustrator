@@ -25,4 +25,9 @@ As mentioned above, the widget needs input parameters. To configure:
 	• Create a helper entity 
 	• Put the widget within a data view supplying aforementioned helper entity 
 ## Known bugs
-There are no known bugs with the widget as of July 2nd 2025. Self-references in flowcharts are weirdly elongated, this is an issue with the Mermaid library. It was already noted by the Mermaid community and will hopefully be resolved. ![image](https://github.com/user-attachments/assets/0b10f12a-dce6-466d-be91-25e490cf6401)
+There are no known bugs with the widget as of July 2nd 2025. Self-references in flowcharts are weirdly elongated, this is an issue with the Mermaid library. It was already noted by the Mermaid community and will hopefully be resolved. 
+
+![WorkflowExample](https://github.com/user-attachments/assets/24180fac-d771-4f78-8a94-431c1e83a3fa)
+![MindmapExample](https://github.com/user-attachments/assets/e0b8e20d-17cc-4f72-b7e7-c666941bf7db)
+![GanttExample2](https://github.com/user-attachments/assets/02165eb3-9c72-46da-b57c-0d73329b23dc)
+![GanttExample](https://github.com/user-attachments/assets/72e691e2-274e-4db8-8fd8-41b939ca59d5)
