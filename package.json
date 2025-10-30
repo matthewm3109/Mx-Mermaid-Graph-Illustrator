@@ -10,16 +10,18 @@
   },
   "license": "Apache-2.0",
   "config": {
-  "projectPath": "./tests/testProject",
-  "mendixHost": "http://localhost:8080",
-  "developmentPort": 3000,
-  "transpileDependencies": ["mermaid"],
-  "rollupOptions": {
-    "output": {
-      "inlineDynamicImports": true
+    "projectPath": "./tests/testProject",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": 3000,
+    "transpileDependencies": [
+      "mermaid"
+    ],
+    "rollupOptions": {
+      "output": {
+        "inlineDynamicImports": true
+      }
     }
-  }
-},
+  },
   "packagePath": "mendix",
   "scripts": {
     "start": "pluggable-widgets-tools start:server",
@@ -35,7 +37,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "mermaid": "^11.7.0"
+    "mermaid": "^11.12.1"
   },
   "resolutions": {
     "react": "^18.2.0",
