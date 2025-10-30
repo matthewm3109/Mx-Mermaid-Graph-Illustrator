@@ -1,7 +1,7 @@
 {
   "name": "mermaidgraphillustrator",
   "widgetName": "MermaidGraphIllustrator",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Generate a Mermaid Graph ",
   "copyright": "© Mendix Technology BV 2022. All rights reserved.",
   "author": "Mano",
