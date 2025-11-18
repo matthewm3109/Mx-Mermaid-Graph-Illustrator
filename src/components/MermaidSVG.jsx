@@ -1,5 +1,6 @@
 import { ReactElement, createElement, useState, useEffect, useRef, elementUID} from "react";
 import mermaid from "mermaid";
+import elkLayouts from "@mermaid-js/layout-elk"
 
 //Ideally this should be async but... React components cannot be async
 //https://stackoverflow.com/questions/75689775/react-js-async-component
@@ -19,11 +20,16 @@ export function InitialSVG({ changeRecorder, action, markup, config = '{ "theme"
             try {
                 const JSONConfig = config;
                 const parsedConfig = JSON.parse(JSONConfig);
-                mermaid.initialize(parsedConfig);
+                // register ELK
+                mermaid.registerLayoutLoaders(elkLayouts)
+                mermaid.initialize({
+                    parsedConfig
+                });
                 const  { svg } = await mermaid.render('graphDiv', markup);
-                console.info(`SVG: ${svg}`);
+                console.debug(`SVG: ${svg}`);
                 setSVG(svg);
-                console.info(`Updated state: ${svg2}`);
+                console.debug(`Updated state: ${svg2}`);
+
             }
             catch(error){
                 console.warn(`Error in renderMermaid: ${error}`);
